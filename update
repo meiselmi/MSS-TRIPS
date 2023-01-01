@@ -1,0 +1,70 @@
+void update(struct voyage tab[], int taille, int b, int id1){
+
+	int i;
+    for ( i=0; i<=taille; i++){
+        
+        if(tab[i].id==id1){
+         
+         if(b==4) 
+		 { char ch[1000];
+		 	printf("enter the new value: ");
+					gets(ch);
+		 strcpy(tab[i].description,ch);
+	}
+         else if (b==5)
+		 { char ch[25];
+		 	printf("enter the new value: ");
+			scanf("%s",ch);
+		   strcpy(tab[i].destination,ch);
+	}
+         else if (b==6){
+         	char ch[25];
+		 	printf("enter the new value: ");
+				scanf("%s",ch);
+		  strcpy(tab[i].depart,ch);
+	}
+         else if (b==7) {
+         	int j1,m1,a1;
+		 	printf("enter the day: ");
+		 	scanf("%i",&j1);
+		 	printf("enter the month: ");
+		 	scanf("%i",&m1);
+		 	printf("enter the year: ");
+		 	scanf("%i",&a1);
+		    strcpy(tab[i].ddd.j,j1);
+		    strcpy(tab[i].ddd.m,m1);
+		    strcpy(tab[i].ddd.a,a1);
+        	}
+         else if (b==8)
+		 {
+		 	int j1,m1,a1;
+		 	printf("enter the day: ");
+		 	scanf("%i",&j1);
+		 	printf("enter the month: ");
+		 	scanf("%i",&m1);
+		 	printf("enter the year: ");
+		 	scanf("%i",&a1);
+		   strcpy(tab[i].ddr.j,j1);
+		 strcpy(tab[i].ddr.m,m1);
+		 strcpy(tab[i].ddr.a,a1);
+	}
+}
+}
+}
+void update1(struct voyage tab[], int taille, int b, long p, int id1)
+{
+    int i;
+    for (i = 0; i <= taille; i++)
+    {
+
+        if (tab[i].id == id1)
+        {
+            if (b == 1)
+                tab[i].npt = p;
+            else if (b == 2)
+                tab[i].npd = p;
+            else if (b == 3)
+                tab[i].prix = p;
+        }
+    }
+}

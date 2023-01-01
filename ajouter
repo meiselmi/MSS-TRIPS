@@ -1,0 +1,30 @@
+int ajouter(struct voyage T[], int N)
+{
+    printf("enter the id: ");
+    scanf("%d", &T[N].id);
+    printf("enter the total number of places: ");
+    scanf("%d", &T[N].npt);
+    printf("enter the number of available places: ");
+    scanf("%d", &T[N].npd);
+    printf("enter the price: ");
+    scanf("%d", &T[N].prix);
+    printf("enter a description: ");
+    scanf("%s", &T[N].description);
+    printf("enter the departure country : ");
+    scanf("%s", &T[N].depart);
+    printf("enter the destination: ");
+    scanf("%s", &T[N].destination);
+    printf("enter the day of departure: ");
+    scanf("%i", &T[N].ddd.j);
+    printf("enter the month of departure: ");
+    scanf("%i", &T[N].ddd.m);
+    printf("enter the year of departure: ");
+    scanf("%i", &T[N].ddd.a);
+    printf("enter the day of return: ");
+    scanf("%i", &T[N].ddr.j);
+    printf("enter the month of return: ");
+    scanf("%i", &T[N].ddr.m);
+    printf("enter the year of return: ");
+    scanf("%i", &T[N].ddr.a);
+    return 0;
+}

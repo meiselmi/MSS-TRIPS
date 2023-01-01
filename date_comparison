@@ -1,0 +1,18 @@
+int datecomp(struct date d1, struct date d2){
+    if(d1.a>d2.a) return -1;
+    if(d1.a<d2.a) return 1;
+    else if (d1.m>d2.m) return -1;
+            if (d1.m<d2.m) return -1;
+            else if (d1.j>d2.j) return -1;
+            	if (d1.j<d2.j) return 1;
+            	else return 0;
+}
+void Recherche (struct voyage tab[], int taille, struct date d1, struct date d2){
+    int i;
+    for (i=0; i<taille; i++){
+        if((datecomp(tab[i].ddd,d1)>=0)&&(datecomp(tab[i].ddr, d2))<=0){        
+        printf("the id of the available trips between the 2 dates is: %i\n", tab[i].id);
+            	break;
+        }
+}
+}

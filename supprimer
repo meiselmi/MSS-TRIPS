@@ -1,0 +1,29 @@
+void supprimer ( struct voyage T[100],int n,int nb) {
+
+	int iden,i;
+int j=0;
+int test=0;
+printf("give the id of the trip you are willing to delete: ");
+scanf("%i",&iden);
+while ((j<n)&&(test==0)){
+	if (T[j].id==iden){
+		test=1;
+	}
+	else {
+		j++;
+	}
+	
+}
+ if (test==0)
+      printf("delete is impossible!.\n");
+   else
+   {  	
+   	  nb--;
+      for (i = j ; i < n-1; i++){
+	  
+         T[i] = T[i+1];
+         
+ 
+}
+}
+}

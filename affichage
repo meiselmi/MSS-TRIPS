@@ -1,0 +1,23 @@
+char affichage ( struct voyage T[100],int n) 
+{
+int iden;
+int j=0;
+int test=0;
+printf("enter the id:  ");
+scanf("%i",&iden);
+while ((j<n)&&(test==0)){
+	if (T[j].id==iden){
+		test=1;
+	}
+	else {
+		j++;
+	}
+}
+if (test==1){
+printf ("here is the description: %s\n",&T[j].description);	
+}
+else {
+	printf (" the identity number does not exist!.\n");
+	
+}
+}
